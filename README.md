@@ -1,6 +1,6 @@
 # Clean SRT | Clean SRT - All In (SRT Sadeleştirici)
 
-![Clean SRT - SRT Sadeleştirici](https://github.com/serkansarp/Clean-SRT/blob/4f2abc54a5e7f2c2686acdb712e14dbbb101bb39/clear-srt.png)
+![Clean SRT - SRT Sadeleştirici](https://github.com/serkansarp/Clean-SRT/blob/9ded93e8ee4f9fef1d5b03875aa0b3cb4e37c235/clear-srt-with-all-in.png)
 * Eng. Below
 
 Bazı cihazlar tarafından işlenmeden direkt ekrana yazdırılan \<i>, \<b>, \<font color="red">, \{\an8} ve benzeri etiketleri SRT dosyasından temizleyip sade bir dosyaya dönüştürür. Amaç, altyazıyla izlenen videolarda çıkan ve can sıkan etiketlerden kurtulmak, daha rahat bir izleme deneyimi sunmaktır. 
