@@ -5,6 +5,8 @@ VisualStudioVersion = 17.14.36221.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Clean SRT", "Clean SRT\Clean SRT.csproj", "{3848FA96-679D-41B1-9A28-A15B02420191}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Clean SRT - All In", "Clean SRT - All In\Clean SRT - All In.csproj", "{5155CF3F-E00C-422C-BD52-D4EFBC2EBA8F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{3848FA96-679D-41B1-9A28-A15B02420191}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3848FA96-679D-41B1-9A28-A15B02420191}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3848FA96-679D-41B1-9A28-A15B02420191}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5155CF3F-E00C-422C-BD52-D4EFBC2EBA8F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5155CF3F-E00C-422C-BD52-D4EFBC2EBA8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5155CF3F-E00C-422C-BD52-D4EFBC2EBA8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5155CF3F-E00C-422C-BD52-D4EFBC2EBA8F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

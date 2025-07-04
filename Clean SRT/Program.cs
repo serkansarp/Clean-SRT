@@ -1,12 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Linq;
-using System.Runtime.ConstrainedExecution;
-using System.Runtime.InteropServices;
 using System.Text;
 using System.Text.RegularExpressions;
-using System.Threading.Tasks;
 
 /*
 CLEAN SRT
@@ -16,9 +11,9 @@ ve can sıkan etiketlerden kurtulmak, daha rahat bir izleme deneyimi sunmaktır.
 Windows-1254 tipi dosyaları okur ve yazar. Etiketleri temizleme dışında dosyada herhangi bir değişiklik yapmaz.
 Zaman damgalarını, satır numaralarını ve altyazı metinlerini olduğu gibi bırakır.
 
-Başlangıçta el ile dosya yolunu girmeniz gerekir.
+Başlangıçta el ile dosya yolunu girmeniz gerekir. Dosyalarınızın yedeğini almayı unutmayın.
 
-Dosyalarınızın yedeğini almayı unutmayın. Bu program, dosyalarınızı geri dönüşü olmayan şekilde değiştirebilir.
+Bir klasördeki bütün SRT dosyaları için temizleme işlemi için Clean SRT - All In projesini kullanabilirsiniz.
 
 Serkan SARP, 2025
 */
@@ -53,7 +48,7 @@ namespace Clean_SRT
 
             // Dosya büyüklüğü kontrolü (512 kb'tan büyük dosyaları kabul etmiyorum.)
             FileInfo fi = new FileInfo(dosyaYolu);
-            if (fi.Length / 8 > 512)    // Byte olarak alıp kb'a çevirip kontrol ediyorum.
+            if (fi.Length > 512 * 1024)    // Byte olarak alıp kb'a çevirip kontrol ediyorum.
             {
                 Console.WriteLine("Dosya boyutu 512 kb sınırının üzerinde.");
                 return;
