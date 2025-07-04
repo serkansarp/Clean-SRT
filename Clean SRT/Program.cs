@@ -5,6 +5,7 @@ using System.Text.RegularExpressions;
 
 /*
 CLEAN SRT
+
 Bazı cihazlar tarafından işlenmeden direkt ekrana yazdırılan <i>, <b>, {\an8}, <font color="red"> ve benzeri
 etiketleri SRT dosyasından temizleyip sade bir dosyaya dönüştürür. Amaç, altyazıyla izlenen videolarda çıkan
 ve can sıkan etiketlerden kurtulmak, daha rahat bir izleme deneyimi sunmaktır. Olabildiğince sade kodlanmıştır.
@@ -13,7 +14,7 @@ Zaman damgalarını, satır numaralarını ve altyazı metinlerini olduğu gibi 
 
 Başlangıçta el ile dosya yolunu girmeniz gerekir. Dosyalarınızın yedeğini almayı unutmayın.
 
-Bir klasördeki bütün SRT dosyaları için temizleme işlemi için Clean SRT - All In projesini kullanabilirsiniz.
+Bir klasördeki bütün SRT dosyaları için temizleme işlemi için Clean SRT - All In kodunu kullanabilirsiniz.
 
 Serkan SARP, 2025
 */
@@ -28,7 +29,7 @@ namespace Clean_SRT
             Console.WriteLine("CLEAN SRT - Serkan Sarp - 2025\n");
 
             // Dosya yolu girişi
-            Console.WriteLine("- Lütfen temizlemek istediğiniz SRT dosyasının tam yolunu girin:");
+            Console.WriteLine("- Lütfen temizlemek istediğiniz .SRT dosyasının tam yolunu girin:");
             
             string dosyaYolu = Console.ReadLine();
                                               
@@ -42,7 +43,7 @@ namespace Clean_SRT
             // Dosya uzantısı kontrolü
             if (Path.GetExtension(dosyaYolu).ToLower() != ".srt")
             {
-                Console.WriteLine("Dosya uzantısı .srt değil.");
+                Console.WriteLine("Dosya uzantısı .SRT değil.");
                 return;
             }
 
@@ -59,7 +60,7 @@ namespace Clean_SRT
             Console.WriteLine("- Her ihtimale karşı dosyanızın yedeğini almanız önerilir.");
 
 
-            // Dosyayı okuyor - SRT dosyaları genellikle Windows-1254 kodlamasıyla yazıldığı için bu kodlamayı kullanıyorum.
+            // Dosyayı okuyor - .SRT dosyaları genellikle Windows-1254 kodlamasıyla yazıldığı için bu kodlamayı kullanıyorum.
             string srt = File.ReadAllText(dosyaYolu, Encoding.GetEncoding("windows-1254"));
 
             // Tek satırda tüm silmek istediğim etiketleri | ile birleştirerek bulup kaç adet olduğu bilgisini değişkene atıyorum.
@@ -74,7 +75,7 @@ namespace Clean_SRT
             File.WriteAllText(dosyaYolu, temizlenmis, Encoding.GetEncoding("windows-1254"));
 
 
-            Console.WriteLine("- " + etiketSayisi + " adet etiket temizlenerek Srt dosyanız sadeleştirildi.");
+            Console.WriteLine("- " + etiketSayisi + " adet etiket temizlenerek .SRT dosyanız sadeleştirildi.");
             Console.WriteLine("- Lütfen programı sonlandırmak için bir tuşa basın.");
 
             Console.ReadKey();
