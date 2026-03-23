@@ -1,6 +1,6 @@
 # Clean SRT | Clean SRT - All In (SRT Sadeleştirici) | Clean SRT Online
 
-![Clean SRT - SRT Sadeleştirici](https://github.com/serkansarp/Clean-SRT/blob/9ded93e8ee4f9fef1d5b03875aa0b3cb4e37c235/clear-srt-with-all-in.png)
+![Clean SRT - SRT Sadeleştirici](clear-srt-with-all-in-and-online.png)
 
 * Eng. Below
 
