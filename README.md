@@ -9,6 +9,8 @@ Olabildiğince sade kodlanmıştır. Windows-1254 tipi dosyaları okur ve yazar.
 
 Öncesinde dosyalarınızın yedeğini almaya özen gösterin. Clean SRT için başlangıçta dosya yolu, Clean SRT - All In için ise klasör yolunu elle girmeniz gerekir.
 
+Diğer branchteki online kullanılan Clean SRT aracına [Clean SRT Online](https://serkansarp.github.io/Clean-SRT/clean-srt-online.html) linkinden ulaşabilirsiniz.
+
 Serkan SARP, 2025
 
 <hr>
@@ -20,5 +22,7 @@ It removes tags such as \<i>, \<b>, \<font color="red">, \{\an8}, \{\an8} and si
 It is coded as simple as possible. Reads and writes Windows-1254 type files. It does not make any changes to the file except for cleaning tags. It leaves timestamps, line numbers and subtitle text intact.
 
 Make sure to back up your files beforehand. For Clean SRT you need to manually enter the file path at startup & for Clean SRT - All In you need to manually enter the folder path.
+
+You can access Clean SRT Online tool via [Clean SRT Online](https://serkansarp.github.io/Clean-SRT/clean-srt-online.html) link, on other branch.
 
 Serkan SARP, 2025
